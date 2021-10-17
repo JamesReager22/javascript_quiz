@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>    
+    <h1 id="h1">Javascript Quiz</h1>
+    <h2 id="h2"></h2>
+    <p id="countdown"></p>
+    <button onclick="tofirstquestion()" id="beginbutton">Begin</button><br><br> 
+    <div id="answerset1">
+    <p>Which tag name should be used to include Javascript code in an html file?</p>
+    <input type="radio" id="q1ans1" name="q1ans1" value="Answer 1">
+    <label for="q1ans1">Jscript</label><br>
+    <input type="radio" id="q1ans2" name="q1ans2" value="Answer 2">
+    <label for="q1ans2">Script</label><br>  
+    <input type="radio" id="q1ans3" name="q1ans3" value="Answer 3">
+    <label for="q1ans3">Javascript</label><br>
+    <input type="radio" id="q1ans4" name="q1ans4" value="Answer 4">
+    <label for="q1ans4">JS</label><br><br>
+    <Button id="next1" onclick="tosecondquestion()">Next</Button>
+    </div>
+    <div id="answerset2">
+    <p>What is the proper syntax for creating a function named MyFunction?</p>
+    <input type="radio" id="q2ans1" name="q2ans1" value="Answer 1">
+    <label for="q2ans1">MyFunction{}</label><br>
+    <input type="radio" id="q2ans2" name="q2ans2" value="Answer 2">
+    <label for="q2ans2">MyFunction()</label><br>  
+    <input type="radio" id="q2ans3" name="q2ans3" value="Answer 3">
+    <label for="q2ans3">function MyFunction() {}</label><br>
+    <input type="radio" id="q2ans4" name="q2ans4" value="Answer 4">
+    <label for="q2ans4">MyFunction = function() {}</label><br><br>
+    <Button id="next2" onclick="tothirdquestion()">Next</Button>
+    </div>
+    <div id="answerset3">
+    <p>What is the proper way to write a conditional statement where the condition is x = 5?</p>
+    <input type="radio" id="q3ans1" name="q3ans1" value="Answer 1">
+    <label for="q3ans1">If x = 5 {}</label><br>
+    <input type="radio" id="q3ans2" name="q3ans2" value="Answer 2">
+    <label for="q3ans2">If (x = 5) {}</label><br>  
+    <input type="radio" id="q3ans3" name="q3ans3" value="Answer 3">
+    <label for="q3ans3">If x = 5 then{}</label><br>
+    <input type="radio" id="q3ans4" name="q3ans4" value="Answer 4">
+    <label for="q3ans4">If(x = 5) then{}</label><br><br>
+    <Button id="next3" onclick="tofourthquestion()">Next</Button>
+    </div> 
+    <div id="answerset4">
+    <p>How do you edit the css of an html element that has the id, "paragraph1"?</p>
+    <input type="radio" id="q4ans1" name="q4ans1" value="Answer 1">
+    <label for="q4ans1">getElementById("paragraph1"): style</label><br>
+    <input type="radio" id="q4ans2" name="q4ans2" value="Answer 2">
+    <label for="q4ans2">document.getElementById("paragraph1"): style</label><br>  
+    <input type="radio" id="q4ans3" name="q4ans3" value="Answer 3">
+    <label for="q4ans3">getElementById("paragraph1").style</label><br>
+    <input type="radio" id="q4ans4" name="q4ans4" value="Answer 4">
+    <label for="q4ans4">document.getElementById("paragraph1").style</label><br><br>
+    <Button id="next4" onclick="tofifthquestion()">Next</Button>
+    </div>
+    <div id="answerset5">
+    <p>How do you write an alert that says, "error"?</p>
+    <input type="radio" id="q5ans1" name="q5ans1" value="Answer 1">
+    <label for="answer1">alert("error");</label><br>
+    <input type="radio" id="answer2" name="q5ans2" value="Answer 2">
+    <label for="answer2">alert["error"];</label><br>  
+    <input type="radio" id="answer3" name="q5ans3" value="Answer 3">
+    <label for="answer3">alert{error};</label><br>
+    <input type="radio" id="answer4" name="q5ans4" value="Answer 4">
+    <label for="answer4">alert: "error";</label><br><br>
+    <Button id="finish" onclick="endquiz()">Finish</Button>
+    </div> 
+    <div id= "endingform">
+        <label for="initials">Initials:</label><br>
+        <input type="text" id="initials" name="initials"><br>
+        <label for="score">Score (out of 5):</label><br>
+        <input type="text" id="score" name="score"><br><br>
+        <input type="submit" value="Submit" id="submitbutton">
+    </div>  
+<p id="finalp"></p>
+<p id="finalp2"></p>    
+    <script src="script.js"></script>
+</html>
